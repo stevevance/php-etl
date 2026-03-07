@@ -120,7 +120,7 @@ class Row implements ArrayAccess
      */
     public function __get($key)
     {
-        return $this->attributes[$key];
+        return $this->attributes[$key] ?? null;
     }
 
     /**
